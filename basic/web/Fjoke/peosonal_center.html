@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="style/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="style/css.css" type="text/css"/>
+</head>
+<body >
+<!--模态框-->
+<div class="modal fade" role="dialog" id="myModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body" style="padding: 0">
+                <div class="container-fluid">
+                    <div>
+
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active long"><a href="#home" aria-controls="home" role="tab"
+                                                                           data-toggle="tab">登录</a></li>
+                            <li role="presentation" class="long"><a href="#profile" aria-controls="profile" role="tab"
+                                                                    data-toggle="tab">
+                                <button type="button" class="close long_btn" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span></button>
+                                注册</a></li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="home">
+                                <form action="#">
+                                    <div style="padding: 0 30px">
+                                        <div class="row">
+                                            <div class="form-group form_gr_pa">
+                                                <label for="username">用户名</label>
+                                                <input type="text" name="username" class="form-control" id="username"
+                                                       placeholder="请输入用户名"/>
+                                            </div>
+                                            <div class="form-group form_gr_pa">
+                                                <label for="password">密码</label>
+                                                <input type="text" name="psw" class="form-control" id="password"
+                                                       placeholder="请输入密码"/>
+                                            </div>
+                                            <div class="form-group form_gr_pa">
+                                                <label for="checkword">验证码</label>
+                                                <input type="text" name="checkword" class="form-control" id="checkword"
+                                                       placeholder="请输入验证码"/>
+                                                <img src="" width="" alt=""/>
+                                            </div>
+
+                                            <button type="submit" class="btn btn-default"
+                                                    style="width: 100%;font-size: 16px ;margin-top: 5px">登录
+                                            </button>
+                                            <button type="button" class="btn btn-default"
+                                                    style="width: 100%;font-size: 16px;margin-top: 15px">
+                                                <a href="#">
+                                                    <span style="color: #4a4a4a">忘记密码？</span>
+                                                </a>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </form>
+
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="profile">
+                                <form action="#">
+                                    <div style="padding: 0 30px">
+                                        <div class="row">
+                                            <div class="form-group form_gr_pa">
+                                                <label for="user_name">用户名</label>
+                                                <input type="text" name="username" class="form-control" id="user_name"
+                                                       placeholder="请输入用户名"/>
+                                            </div>
+                                            <div class="form-group form_gr_pa">
+                                                <label for="pass_word">密码</label>
+                                                <input type="text" name="psw" class="form-control" id="pass_word"
+                                                       placeholder="请输入密码"/>
+                                            </div>
+                                            <div class="form-group form_gr_pa">
+                                                <label for="pass_word_agn">确认密码</label>
+                                                <input type="text" name="psw_check" class="form-control"
+                                                       id="pass_word_agn" placeholder="请输入密码"/>
+                                            </div>
+                                            <div class="form-group form_gr_pa">
+                                                <label for="email">邮箱</label>
+                                                <input type="text" name="email" class="form-control" id="email"
+                                                       placeholder="请输入您的邮箱地址"/>
+                                            </div>
+                                            <div class="form-group form_gr_pa">
+                                                <label for="phone_number">手机号</label>
+                                                <input type="text" name="phone_number" class="form-control"
+                                                       id="phone_number" placeholder="请输入您的手机号"/>
+                                            </div>
+                                            <div class="form-group form_gr_pa">
+                                                <label for="two_leave_pwd">二级密码</label>
+                                                <input type="text" name="two_leave_pwd" class="form-control"
+                                                       id="two_leave_pwd" placeholder="请输入您的二级密码"/>
+                                            </div>
+                                            <div class="form-group form_gr_pa">
+                                                <label for="check_two_leave_pwd">确认二级密码</label>
+                                                <input type="text" name="check_two_leave_pwd" class="form-control"
+                                                       id="check_two_leave_pwd" placeholder="请输入您的二级密码"/>
+                                            </div>
+
+                                            <button type="submit" class="btn btn-default"
+                                                    style="width: 100%;font-size: 16px ;margin-top: 5px">提交
+                                            </button>
+
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+<!--导航-->
+<nav class="navbar navbar-default navbar-static-top nav_my2">
+    <!--导航折叠-->
+    <div class="nav-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav_link"
+            aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    <!-- logo-->
+    <a class="navbar-brand ban_bg" href="#"></a>
+</div>
+    <!-- 被折叠的菜单-->
+    <div class="collapse navbar-collapse" style="width: 100%" id="nav_link">
+        <ul class="nav navbar-nav my_nav_ul">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">爆笑</a></li>
+            <li><a href="#">段噗</a></li>
+            <li><a href="#">Hot</a></li>
+
+        </ul>
+        <ul class="nav navbar-nav my_nav_ul2 navbar-right">
+            <li><a href="#" data-toggle="modal" data-target="#myModal">登陆</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#myModal">注册</a></li>
+        </ul>
+    </div>
+</nav>
+<section>
+   <div class="container">
+     <div class="row">
+         <div class="pc_header">
+             <div class="pc_header_banner"></div>
+             <div class="personal_information">
+                 <div class="col-md-2">
+                     <img src="images/569114.png" class="img-thumbnail" alt=""/>
+                 </div>
+                 <div class="col-md-10">
+                     <div class="visit"><span class="visit_tit">本周访问</span><span class="visit_num">20</span></div>
+                     <div class="account_name">p763628940</div>
+                     <div class="personal_introduce"><span class="personal_introduce_tit">个人介绍</span><span></span></div>
+                     <div class="lave_message"><span class="lave_message_tit">等级信息：</span>
+                         <a href="#" class="leave_message_all">等级信息详情</a>
+                       <span class="pull-right">  当前等级leave1当前经验/升级经验 <span>30/50</span></span>
+                         <span></span>
+                         <span class="lave_message_progress_bar"><div class="progress">
+                             <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                 60%
+                             </div>
+                         </div></span>
+
+
+                     </div>
+                 </div>
+             </div>
+
+         </div>
+
+     </div>
+       <div class="row">
+           <div class="col-md-8 col-lg-8">
+               <!-- Nav tabs -->
+               <ul class="nav nav-tabs" role="tablist">
+                   <li role="presentation" class="active"><a href="#personal1" aria-controls="home" role="tab" data-toggle="tab">我的发帖</a></li>
+                   <li role="presentation"><a href="#personal2" aria-controls="personal2" role="tab" data-toggle="tab">我评论过的</a></li>
+                   <li role="presentation"><a href="#personal3" aria-controls="personal3" role="tab" data-toggle="tab">好友动态</a></li>
+                   <li role="presentation"><a href="#personal4" aria-controls="personal4" role="tab" data-toggle="tab">即时消息</a></li>
+                   <li role="presentation"><a href="#personal5" aria-controls="personal4" role="tab" data-toggle="tab">站内信息</a></li>
+                   <li role="presentation"><a href="#personal6" aria-controls="personal4" role="tab" data-toggle="tab">高级设置</a></li>
+               </ul>
+
+               <!-- Tab panes -->
+               <div class="tab-content">
+                   <div role="tabpanel" class="tab-pane active" id="personal1">...</div>
+                   <div role="tabpanel" class="tab-pane" id="personal2">...</div>
+                   <div role="tabpanel" class="tab-pane" id="personal3">...</div>
+                   <div role="tabpanel" class="tab-pane" id="personal4">...</div>
+                   <div role="tabpanel" class="tab-pane" id="personal5">...</div>
+                   <div role="tabpanel" class="tab-pane" id="personal6">...</div>
+               </div>
+
+           </div>
+           <div class="col-lg-4 col-md-4">
+               <a href="#" >
+                   <div class="sendjoke text-center">
+                       我要发布笑话
+                   </div>
+               </a>
+               <div class="clssify">
+                   <div class="row">
+                       <div class="col-xs-3  clssify_inside clssify_inside1"> <a href="#" ><div class="clssify_inside_show">内涵</div></a></div>
+                       <div class="col-xs-3  clssify_inside clssify_inside3"> <a href="#" ><div class="clssify_inside_show">神复</div></a></div>
+                       <div class="col-xs-3  clssify_inside clssify_inside2"> <a href="#" ><div class="clssify_inside_show">节操</div></a></div>
+                       <div class="col-xs-3  clssify_inside clssify_inside4"> <a href="#" ><div class="clssify_inside_show">吐槽</div></a></div>
+                   </div>
+                   <div class="row">
+                       <div class="col-xs-3  clssify_inside clssify_inside1"> <a href="#" ><div class="clssify_inside_show">内涵</div></a></div>
+                       <div class="col-xs-3  clssify_inside clssify_inside3"> <a href="#" ><div class="clssify_inside_show">神复</div></a></div>
+                       <div class="col-xs-3  clssify_inside clssify_inside2"> <a href="#" ><div class="clssify_inside_show">节操</div></a></div>
+                       <div class="col-xs-3  clssify_inside clssify_inside4"> <a href="#" ><div class="clssify_inside_show">吐槽</div></a></div>
+                   </div>
+               </div>
+               <!--<div class="move_end">-->
+               <!--<div class="iphoe">苹果版</div>-->
+               <!--<div class="andro">安卓版</div>-->
+               <!--</div>-->
+               <div class="leaber_right">
+                   <a href="#">动态图</a>
+                   <a href="#">内涵图</a>
+                   <br/>
+                   <a href="#">萌然心动</a>
+                   <a href="#">一周分享排行榜</a>
+                   <a href="#">爪</a>
+               </div>
+               <div class="carousel_my">
+                   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                       <!-- Indicators -->
+                       <!-- Wrapper for slides -->
+                       <div class="carousel-inner" role="listbox">
+                           <div class="item active">
+                               <img src="images/banner_bg.jpg" alt="...">
+                               <div class="carousel-caption">
+                                   这是个美女
+                               </div>
+                           </div>
+                           <div class="item">
+                               <img src="images/bg_sm.jpg" alt="...">
+                               <div class="carousel-caption">
+                                   ...
+                               </div>
+                           </div>
+                       </div>
+                       <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                           <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                           <span class="sr-only">Previous</span>
+                       </a>
+                       <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                           <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                           <span class="sr-only">Next</span>
+                       </a>
+                   </div>
+
+               </div>
+               <div class="listabout">
+                   <ul class="nav nav-tabs myul_show_under" role="tablist">
+                       <li role="presentation" ><a href="" >综合排行榜</a></li>
+                       <li role="presentation" class="active"><a href="#light" aria-controls="home" role="tab" data-toggle="tab">最亮达人榜</a></li>
+                       <li role="presentation" style="border-right:none "><a href="#sendmore" aria-controls="profile" role="tab" data-toggle="tab">发帖达人榜</a></li>
+                   </ul>
+                   <!-- Tab panes -->
+                   <div class="tab-content">
+                       <div role="tabpanel" class="tab-pane active" id="light">
+                           <ul class="list-group">
+                               <li class="list-group-item">
+                                   <span class="ranking">1</span>
+                                   <a href="#"><span class="face_head"></span>touxiang</a>
+                                   <span class="num_aboutprson pull-right">100</span>
+                               </li>
+                               <li class="list-group-item">
+                                   <span class="ranking">1</span>
+                                   <a href="#"><span class="face_head"></span>touxiang</a>
+                                   <span class="num_aboutprson pull-right">100</span>
+                               </li>
+                               <li class="list-group-item">
+                                   <span class="ranking">1</span>
+                                   <a href="#"><span class="face_head"></span>touxiang</a>
+                                   <span class="num_aboutprson pull-right">100</span>
+                               </li>
+                               <li class="list-group-item">
+                                   <span class="ranking">1</span>
+                                   <a href="#">touxiang</a>
+                                   <span class="num_aboutprson pull-right">100</span>
+                               </li>
+                               <li class="list-group-item">
+                                   <span class="ranking">1</span>
+                                   <a href="#">touxiang</a>
+                                   <span class="num_aboutprson pull-right">100</span>
+                               </li>
+                               <li class="list-group-item">
+                                   <span class="ranking">1</span>
+                                   <a href="#">touxiang</a>
+                                   <span class="num_aboutprson pull-right">100</span>
+                               </li>
+                               <li class="list-group-item">
+                                   <span class="ranking">1</span>
+                                   <a href="#">touxiang</a>
+                                   <span class="num_aboutprson pull-right">100</span>
+                               </li>
+                               <li class="list-group-item">
+                                   <span class="ranking">1</span>
+                                   <a href="#">touxiang</a>
+                                   <span class="num_aboutprson pull-right">100</span>
+                               </li>
+                               <li class="list-group-item">
+                                   <span class="ranking">1</span>
+                                   <a href="#">touxiang</a>
+                                   <span class="num_aboutprson pull-right">100</span>
+                               </li>
+                           </ul>
+                       </div>
+                       <div role="tabpanel" class="tab-pane" id="sendmore">
+                           <ul class="list-group">
+                               <li class="list-group-item">
+                                   <span class="ranking">1</span>
+                                   <a href="#"><span class="face_head"></span>touxiang</a>
+                                   <span class="num_aboutprson pull-right">100</span>
+                               </li>
+                               <li class="list-group-item">
+                                   <span class="ranking">1</span>
+                                   <a href="#"><span class="face_head"></span>touxiang</a>
+                                   <span class="num_aboutprson pull-right">100</span>
+                               </li>
+                               <li class="list-group-item">
+                                   <span class="ranking">1</span>
+                                   <a href="#"><span class="face_head"></span>touxiang</a>
+                                   <span class="num_aboutprson pull-right">100</span>
+                               </li>
+                               <li class="list-group-item">
+                                   <span class="ranking">1</span>
+                                   <a href="#">touxiang</a>
+                                   <span class="num_aboutprson pull-right">100</span>
+                               </li>
+                               <li class="list-group-item">
+                                   <span class="ranking">1</span>
+                                   <a href="#">touxiang</a>
+                                   <span class="num_aboutprson pull-right">100</span>
+                               </li>
+                               <li class="list-group-item">
+                                   <span class="ranking">1</span>
+                                   <a href="#">touxiang</a>
+                                   <span class="num_aboutprson pull-right">100</span>
+                               </li>
+                               <li class="list-group-item">
+                                   <span class="ranking">1</span>
+                                   <a href="#">touxiang</a>
+                                   <span class="num_aboutprson pull-right">100</span>
+                               </li>
+                               <li class="list-group-item">
+                                   <span class="ranking">1</span>
+                                   <a href="#">touxiang</a>
+                                   <span class="num_aboutprson pull-right">100</span>
+                               </li>
+                               <li class="list-group-item">
+                                   <span class="ranking">1</span>
+                                   <a href="#">touxiang</a>
+                                   <span class="num_aboutprson pull-right">100</span>
+                               </li>
+                           </ul>
+                       </div>
+
+                   </div>                </div>
+
+           </div>
+       </div>
+   </div>
+</section>
+<footer class="footer">
+    <div class="row">
+        <div class="col-md-3 text-center footerlogo">
+            <a href="#"><img src="images/f_joke_logo_weight.png" class="footer_logo" alt=""/></a>
+        </div>
+
+        <div class="col-md-9 text-center  footerspan_long">
+            <span >Makeby@ Long 2015 </span>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="js/jquery-2.1.4.min.js"> </script>
+<script src="js/bootstrap.min.js"> </script>
+
+</html>

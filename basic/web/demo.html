@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../../bootstrap.min.css" type="text/css">
+    <script src="../../jquery-2.1.4.min.js"></script>
+
+</head>
+
+<body>
+<form action="../../index.php"></form>
+<div class="container">
+    <div class="page-header text-center"><h1>初始化信息</h1></div>
+    <div class="form-group">
+        <label for="username">姓名</label>
+        <input type="email" class="form-control" id="username"name="name" placeholder="Email">
+    </div>
+    <div class="form-group">
+        <label for="age">会员组</label>
+        <input type="email" class="form-control" id="groupname" name="membergroup" placeholder="Email">
+    </div>
+    <div class="form-group">
+        <label for="age">UID</label>
+        <input type="email" class="form-control" id="uid" name="uid" placeholder="Email">
+    </div>
+    <div class="form-group">
+        <label for="age">年龄</label>
+        <input type="email" class="form-control" id="age" name="age" placeholder="Email">
+    </div>
+</div>
+<div class="container">
+   <footer>
+       <h3 id="h3"></h3>
+   </footer>
+</div>
+</body>
+<script>
+    $(document).ready(function(){
+        var url ='index.php?r=mysite/index&isAjax=1&do=checkmember&username=long';
+        var data={};
+        $.get(url,data,function(res){
+          var json=  $.parseJSON(res);
+$("#username").val(json.username);
+$("#groupname").val(json.groupname);
+$("#uid").val(json.uid);
+        })
+    })
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

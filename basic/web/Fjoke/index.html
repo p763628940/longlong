@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="style/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="style/css.css" type="text/css"/>
+</head>
+<body >
+<!--模态框-->
+<div class="modal fade" role="dialog" id="myModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body" style="padding: 0">
+                <div class="container-fluid">
+                    <div>
+
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation"  class="active long" ><a href="#home" aria-controls="home" role="tab" data-toggle="tab">登录</a></li>
+                            <li role="presentation" class="long"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">
+                                <button type="button" class="close long_btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                注册</a></li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="home">
+                                <form action="#">
+                             <div style="padding: 0 30px">
+                                 <div class="row">
+                                     <div class="form-group form_gr_pa">
+                                         <label for="username">用户名</label>
+                                         <input type="text"  name="username" class="form-control" id="username" placeholder="请输入用户名"/>
+                                     </div>
+                                     <div class="form-group form_gr_pa">
+                                         <label for="password">密码</label>
+                                         <input type="text" name="psw" class="form-control" id="password" placeholder="请输入密码"/>
+                                     </div>
+                                     <div class="form-group form_gr_pa">
+                                         <label for="checkword">验证码</label>
+                                         <input type="text" name="checkword" class="form-control" id="checkword" placeholder="请输入验证码"/>
+                                         <img src="" width="" alt=""/>
+                                     </div>
+
+                                     <button type="submit" class="btn btn-default" style="width: 100%;font-size: 16px ;margin-top: 5px">登录</button>
+                                     <button type="button" class="btn btn-default" style="width: 100%;font-size: 16px;margin-top: 15px">
+                                         <a href="#">
+                                             <span style="color: #4a4a4a">忘记密码？</span>
+                                         </a>
+                                     </button>
+                                 </div>
+                             </div>
+
+                                </form>
+
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="profile">
+                                <form action="#">
+                                    <div style="padding: 0 30px">
+                                        <div class="row">
+                                            <div class="form-group form_gr_pa">
+                                                <label for="user_name" >用户名</label>
+                                                <input type="text"  name="username" class="form-control" id="user_name" placeholder="请输入用户名"/>
+                                            </div>
+                                            <div class="form-group form_gr_pa">
+                                                <label for="pass_word">密码</label>
+                                                <input type="text" name="psw" class="form-control" id="pass_word" placeholder="请输入密码"/>
+                                            </div>
+                                            <div class="form-group form_gr_pa">
+                                                <label for="pass_word_agn">确认密码</label>
+                                                <input type="text" name="psw_check" class="form-control" id="pass_word_agn" placeholder="请输入密码"/>
+                                            </div>
+                                            <div class="form-group form_gr_pa">
+                                                <label for="email">邮箱</label>
+                                                <input type="text" name="email" class="form-control" id="email" placeholder="请输入您的邮箱地址"/>
+                                            </div>
+                                            <div class="form-group form_gr_pa">
+                                                <label for="phone_number">手机号</label>
+                                                <input type="text" name="phone_number" class="form-control" id="phone_number" placeholder="请输入您的手机号"/>
+                                            </div>
+                                            <div class="form-group form_gr_pa">
+                                                <label for="two_leave_pwd">二级密码</label>
+                                                <input type="text" name="two_leave_pwd" class="form-control" id="two_leave_pwd" placeholder="请输入您的二级密码"/>
+                                            </div>
+                                            <div class="form-group form_gr_pa">
+                                                <label for="check_two_leave_pwd">确认二级密码</label>
+                                                <input type="text" name="check_two_leave_pwd" class="form-control" id="check_two_leave_pwd" placeholder="请输入您的二级密码"/>
+                                            </div>
+
+                                            <button type="submit" class="btn btn-default" style="width: 100%;font-size: 16px ;margin-top: 5px">提交</button>
+
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!--导航-->
+<nav class="navbar navbar-default navbar-static-top nav_my">
+    <!--导航折叠-->
+    <div class="nav-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav_link" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <!-- logo-->
+        <a class="navbar-brand ban_bg" href="#" ></a>
+    </div>
+    <!-- 被折叠的菜单-->
+    <div class="collapse navbar-collapse" style="width: 100%" id="nav_link">
+        <ul class="nav navbar-nav my_nav_ul">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">爆笑</a></li>
+            <li><a href="#">段噗</a></li>
+            <li><a href="#">Hot</a></li>
+
+        </ul>
+        <ul class="nav navbar-nav my_nav_ul2 navbar-right">
+            <li><a href="#"  data-toggle="modal" data-target="#myModal">登陆</a></li>
+            <li><a href="#"  data-toggle="modal" data-target="#myModal">注册</a></li>
+        </ul>
+    </div>
+</nav>
+<header>
+    <!--背景图1-->
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="indexbg  hidden-sm hidden-xs">
+            </div>
+        </div>
+    </div>
+    <!--背景图2-->
+    <div class="container-fluid indexbg2box">
+        <div class="row">
+            <div class="indexbg2 hidden-md hidden-lg">
+            </div>
+        </div>
+    </div>
+    <!--头部bannner的内容-->
+    <div class="container-fluid index_header_con">
+        <div class="row my_index_header">
+            <div class="col-md-4 col-md-offset-2  ">
+                <a href="#" ><img src="images/f_joke_logo_weight.png" width="500" height="auto" alt=""/></a>
+                <h2  class="h2 text-left">Wellcome !
+                    <br/>
+                    <br/>
+                    There longlong's home. </h2>
+            </div>
+            <div class="col-md-2 col-md-offset-4 visible-md visible-lg">
+                <span class="movething"></span>
+            </div>
+        </div>
+    </div>
+</header>
+<!--首页第二部分内容-->
+<section class="section_two">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 text-center">
+             <div class="leader_box">
+                 <a href="#" class="move_role">   <img src="images/guide_1.png"class="guide_image" alt=""/></a>
+                 <h3>美女</h3>
+                 <p>In me the tiger sniffes the rose <br/>The secret of life is to look good at a distance.</p>
+             </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+             <div class="leader_box">
+                 <a href="#" class="move_role"> <img src="images/guide_2.png"class="guide_image" alt=""/></a>
+                 <h3>帅哥</h3>
+                 <p>ل"اأسمح لك ان تزول من عالمي مهما تكون النه<br>إذا تبكي لأنك أضعت غروب الشمس فانك سوف تضيع نجوم بعده</p>
+             </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+             <div class="leader_box">
+                 <a href="#" class="move_role">  <img src="images/guide_3.png"class="guide_image" alt=""/></a>
+                 <h3>卡通</h3>
+                 <p>真実は何时もひとつ（いです)仆は <br/>贵方がピンチの时は いつてもあられますよ、前に 一度いたってしょ 死ぬまだ贵方を护りで</p>
+             </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+             <div class="leader_box">
+                 <a href="#" class="move_role"> <img src="images/guide_4.png"class="guide_image" alt=""/></a>
+                 <h3>Gif</h3>
+                 <p>Не будь так скромен - ты не настолько велик! Ничто так не экономит деньги, как взаимная любовь с первого взгляда.</p>
+             </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section_three visible-lg visible-md">
+   <div class="container">
+       <div class="row">
+           <div class="col-lg-6 col-md-6 text-center">
+               <div class="list_wrapper">
+                   <h1>希望您在这里度过愉快的时光</h1>
+                   <div class="list">
+                       <div class="listitem">
+                           <h3>超新的趣闻</h3>
+                           <p>想看有意思的东东吗？Yes come here</p>
+                       </div>
+                       <div class="listitem">
+                           <h3>有趣的段子</h3>
+                           <p>咦？你说啥！哈哈哈！That's so funny!</p>
+                       </div>
+                       <div class="listitem">
+                           <h3>爆笑的gif图片</h3>
+                           <p>会动唉，你是不是傻！Gif it's moveimg </p>
+                       </div>
+                   </div>
+
+               </div>
+           </div>
+           <div class="col-lg-6 col-md-6 text-center">
+               <div class="sec3_imgbox">
+                   <img src="images/section3_img1.jpg" class="img-rounded"  alt=""/>
+               </div>
+           </div>
+       </div>
+   </div>
+</section>
+<section class="section_three hidden-lg hidden-md">
+   <div class="container">
+       <div class="row">
+           <div class="col-lg-6 col-md-6 text-center">
+               <div class="sec3_imgbox">
+                   <img src="images/section3_img1.jpg" class="img-rounded"  alt=""/>
+               </div>
+           </div>
+           <div class="col-lg-6 col-md-6 text-left">
+               <div class="list_wrapper2">
+                   <h1>希望您在这里度过愉快的时光</h1>
+                   <div class="list">
+                       <div class="listitem">
+                           <h3>超新的趣闻</h3>
+                           <p>想看有意思的东东吗？Yes come here</p>
+                       </div>
+                       <div class="listitem">
+                           <h3>有趣的段子</h3>
+                           <p>咦？你说啥！哈哈哈！That's so funny!</p>
+                       </div>
+                       <div class="listitem">
+                           <h3>爆笑的gif图片</h3>
+                           <p>会动唉，你是不是傻！Gif it's moveimg </p>
+                       </div>
+                   </div>
+
+               </div>
+           </div>
+
+       </div>
+   </div>
+</section>
+<!--第四块-->
+<section class="section_four">
+    <div class="container  ">
+        <div class="heading text-center"><h2>登陆后可以发表评论和自己喜欢的宝贝哦！哇 卡卡</h2></div>
+    </div>
+   <div class="center " style="text-align: center">
+       <a href="#">
+           <div class="buttonbox  "><span>注册</span></div>
+       </a>
+       <a href="#"> <div class="buttonbox "><span >发布</span></div></a>
+   </div>
+</section>
+<!--第五块-->
+<section class="section_five">
+    <div class="row text-center">
+        <div class="imghead"><h2>嘿嘿！哈哈！ 吼吼！</h2></div>
+    </div>
+   <div class="container-fluid">
+       <div class="row text-center">
+           <div class="col-md-6 col-lg-2 imgpading">
+               <a href="#"><img src="images/logo_akl.jpg" class="index_showimg img-responsive img-thumbnail" alt=""/></a>
+           </div>
+           <div class="col-md-6 col-lg-2 imgpading">
+               <a href="#"><img src="images/logo_dongman.jpg" class="index_showimg img-responsive img-thumbnail" alt=""/></a>
+           </div>
+           <div class="col-md-6 col-lg-2 imgpading">
+               <a href="#"><img src="images/logo_duomo.jpg" class="index_showimg img-responsive img-thumbnail"  alt=""/></a>
+           </div>
+           <div class="col-md-6 col-lg-2 imgpading">
+               <a href="#"><img src="images/logo_luoli.jpg" class="index_showimg img-responsive img-thumbnail" alt=""/></a>
+           </div>
+           <div class="col-md-6 col-lg-2 imgpading">
+               <a href="#"><img src="images/logo_meinv.jpg" class="index_showimg img-responsive img-thumbnail" alt=""/></a>
+           </div>
+           <div class="col-md-6 col-lg-2 imgpading">
+               <a href="#"><img src="images/logo_shuaige.jpg" class="index_showimg img-responsive img-thumbnail" alt=""/></a>
+           </div>
+
+       </div>
+   </div>
+</section>
+<section class="section_six">
+    
+</section>
+<footer class="footer">
+    <div class="row">
+        <div class="col-md-3 text-center footerlogo">
+            <a href="#"><img src="images/f_joke_logo_weight.png" class="footer_logo" alt=""/></a>
+        </div>
+
+        <div class="col-md-9 text-center  footerspan_long">
+        <span >Makeby@ Long 2015 </span>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="js/jquery-2.1.4.min.js"> </script>
+<script src="js/bootstrap.min.js"> </script>
+</html>
